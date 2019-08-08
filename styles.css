@@ -1,0 +1,29 @@
+body {
+	font-family: "Geneva";
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+	background: #badbf5;
+
+}
+
+tr:nth-child(even) {
+	background: #81c7fc;
+}
+
+thead th {
+	background: #0390fc;
+}
+
+tbody tr td.mandatory {
+	background: #7fcc78;
+}
+
+tbody tr td.stretch {
+	background: #c0ffba;
+}
