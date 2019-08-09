@@ -1,29 +1,44 @@
 body {
-	font-family: "Geneva";
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000;
+	padding: 0 2%;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #000;
+}
+
+footer {
+	padding-top: 2%;
+}
+
+table {
+	border-spacing: 0px;
+}
+
+table, th, td {
+  border: 1px solid #FFF;
 }
 
 th, td {
-  border: 1px solid white;
   padding: 5px;
+  width: 1%;
 }
 
-tr:nth-child(odd) {
-	background: #badbf5;
-
+td {
+	background: #FFF;
+	vertical-align: top;
 }
 
-tr:nth-child(even) {
-	background: #81c7fc;
-}
-
-thead th {
-	background: #0390fc;
+th {
+	background: grey;
+	color: white;
 }
 
 tbody tr td.mandatory {
-	background: #7fcc78;
+	background: #7DFA47;
 }
 
 tbody tr td.stretch {
-	background: #c0ffba;
+	background: #E4EE6C;
 }
