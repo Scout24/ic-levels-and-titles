@@ -50,9 +50,3 @@ tbody tr td.stretch {
 li {
 	padding-bottom: 5px;
 }
-
-object.contents {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
