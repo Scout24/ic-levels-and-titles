@@ -1,6 +1,7 @@
 body {
-	font-family: Helvetica, sans-serif;
-	color: #000;
+	font-family: Tahoma, sans-serif;
+	color: #333;
+	background-color: #FFF;
 	padding: 0 2%;
 }
 
@@ -13,8 +14,16 @@ header a {
 	float: right;
 }
 
+h1, h2 {
+	font-family: Helvetica, sans-serif;
+}
+
 .clear {
 	clear: both;
+}
+
+i {
+	color: #5C5C5C;
 }
 
 a:link, a:visited, a:hover {
@@ -38,28 +47,28 @@ table, th, td {
 }
 
 th, td {
-  padding: 5px;
+  padding: 10px;
   width: 1%;
 }
 
 td {
-	background: #e6e6e6;
+	background: #D6D6D6;
 	vertical-align: top;
 }
 
 th {
-	background: #7d7d7c;
+	background: #5C5C5C;
 	color: white;
 }
 
 tbody tr td.mandatory {
-	background: #7DFA47;
+	background:#FFA644;
 }
 
 tbody tr td.stretch {
-	background: #E4EE6C;
+	background: #FFD3A1;
 }
 
-li {
-	padding-bottom: 5px;
+li, p, h2 {
+	padding-top: 10px;
 }
