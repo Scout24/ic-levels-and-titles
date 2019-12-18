@@ -8,7 +8,5 @@ ENV LANGUAGE en_US.UTF-8
 RUN mkdir /app
 WORKDIR /app
 
-ADD Gemfile /app/
+ADD Gemfile Gemfile.lock /app/
 RUN bundle install
-
-ADD . /app
