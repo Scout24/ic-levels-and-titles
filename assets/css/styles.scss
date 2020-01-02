@@ -1,10 +1,21 @@
 ---
 ---
 
+$black: #000000;
+$white: #FFFFFF;
+
+$orange-80: #FFA644;
+$orange-40: #FFD3A1;
+
+$charcoal: #333333;
+$charcoal-80: #5C5C5C;
+$charcoal-60: #858585;
+$charcoal-20: #D6D6D6;
+
 body {
 	font-family: Tahoma, sans-serif;
-	color: #333;
-	background-color: #FFF;
+	color: $charcoal;
+	background-color: $white;
 	margin: 40px;
 }
 
@@ -17,49 +28,49 @@ nav ul {
 	margin: 0;
 	list-style: none;
 	float: right;
-}
 
-nav ul li{
-	display: inline-block;
-	position: relative;
-	text-align: left;
-	padding-top: 0px;
-}
+	li{
+		display: inline-block;
+		position: relative;
+		text-align: left;
+		padding-top: 0px;
+	}
 
 
-nav ul li.dropdown a {
-	display: block;
-	padding: 8px 25px;
-	color: #333;
-}
+	li.dropdown a {
+		display: block;
+		padding: 8px 25px;
+		color: $charcoal;
+	}
 
-nav ul li.dropdown>a {
-	text-decoration: none;
-}
+	li.dropdown>a {
+		text-decoration: none;
+	}
 
-nav ul li.dropdown>a::after {
-	color: #858585;
-	font-size: 75%;
-	content: " \25BC";
-}
+	li.dropdown>a::after {
+		color: $charcoal-60;
+		font-size: 75%;
+		content: " \25BC";
+	}
 
-nav ul li.dropdown ul {
-	min-width: 100%;
-	background: #D6D6D6;
-	display: none;
-	position: absolute;
-	z-index: 999;
-	left: 0;
-	padding-left: 0;
-}
+	li.dropdown ul {
+		min-width: 100%;
+		background: $charcoal-20;
+		display: none;
+		position: absolute;
+		z-index: 999;
+		left: 0;
+		padding-left: 0;
+	}
 
-nav ul li.dropdown:hover ul {
-	display: block;
-	padding-bottom: 20px;
-}
+	li.dropdown:hover ul {
+		display: block;
+		padding-bottom: 20px;
+	}
 
-nav ul li ul.dropdown li{
-	display: block;;
+	li ul.dropdown li{
+		display: block;;
+	}
 }
 
 h1 {
@@ -75,46 +86,44 @@ h1, h2 {
 }
 
 i {
-	color: #5C5C5C;
+	color: $charcoal-80;
 }
 
 a:link, a:visited, a:hover {
-	color: #000;
-}
-
-a:active {
-	color: #7d7d7c;
+	color: $black;
 }
 
 table {
 	border-spacing: 0px;
-}
 
-table, th, td {
-  border: 1px solid #FFF;
-}
+	th, td {
+		border: 1px solid $white;
+	}
 
-th, td {
-  padding: 10px;
-  width: 1%;
-}
+	th, td {
+		padding: 10px;
+		width: 1%;
+	}
 
-td {
-	background: #D6D6D6;
-	vertical-align: top;
-}
+	td {
+		background: $charcoal-20;
+		vertical-align: top;
+	}
 
-th {
-	background: #5C5C5C;
-	color: white;
-}
+	th {
+		background: $charcoal-80;
+		color: white;
+	}
 
-tbody tr td.mandatory {
-	background:#FFA644;
-}
+	tbody {
+		tr td.mandatory {
+			background: $orange-80;
+		}
 
-tbody tr td.stretch {
-	background: #FFD3A1;
+		tr td.stretch {
+			background: $orange-40;
+		}
+	}
 }
 
 li, p {
