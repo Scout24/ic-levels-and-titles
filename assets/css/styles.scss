@@ -129,3 +129,24 @@ table {
 li, p {
 	padding-top: 10px;
 }
+
+@media print {
+	nav {
+		display: none;
+	}
+
+	body * {
+		font-size: 90%;
+	}
+
+	body {
+		-webkit-print-color-adjust: exact;
+		table {
+			th, td {
+
+				padding: 5px;
+				width: 1%;
+			}
+		}
+	}
+}
