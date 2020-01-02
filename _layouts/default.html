@@ -2,77 +2,77 @@
 <html>
 <head>
 	<title>Scout24 Careers: {{ page.title }}</title>
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url}}">
 </head>
 
 <body>
 	<header>
 		<nav role="navigation">
-			<img src="/assets/images/logo.png">
+			<img src="{{"/assets/images/logo.png" | relative_url}}">
 
-  			<ul>
-  				<li><a href="/">Home</a></li>
+			<ul>
+				<li><a href="{{"/" | relative_url}}">Home</a></li>
 
-    			<li class="dropdown">
-    				<a href="#">Levels & Definitions</a>
+				<li class="dropdown">
+					<a href="#">Levels & Definitions</a>
 
-      				<ul>
+					<ul>
 						<li>
-							<a href="/docs/influence.html">
+							<a href="{{"/docs/influence.html" | relative_url}}">
 								Expected Influence
 							</a>
 						</li>
 
 						<li>
-							<a href="/docs/collaboration-and-communication.html">
+							<a href="{{"/docs/collaboration-and-communication.html" | relative_url}}">
 								Expected Collaboration & Communication
 							</a>
 						</li>
 				
 						<li>
-							<a href="/docs/functional-ability.html">
+							<a href="{{"/docs/functional-ability.html" | relative_url}}">
 								Expected Functional Ability
 							</a>
 						</li>
 				
 						<li>
-							<a href="/docs/quality-and-reliability.html">
+							<a href="{{"/docs/quality-and-reliability.html" | relative_url}}">
 								Expected Quality & Reliability
 							</a>
 						</li>
 				
 						<li>
-							<a href="/docs/business-impact.html">
+							<a href="{{"/docs/business-impact.html" | relative_url}}">
 								Expected Business Impact
 							</a>
 						</li>
 					</ul>
-    			</li>
+				</li>
     			
 				<li class="dropdown">
-    				<a href="#">Reference</a>
+					<a href="#">Reference</a>
 
-      				<ul>
+					<ul>
 						<li>
-							<a href="/docs/how-to-read-this.html">
+							<a href="{{"/docs/how-to-read-this.html" | relative_url}}">
 								How to Read Levels & Definitions
 							</a>
 						</li>
 
 						<li>
-							<a href="/docs/available-engineering-job-titles.html">
+							<a href="{{"/docs/available-engineering-job-titles.html" | relative_url}}">
 								Available Engineering Job Titles
 							</a>
 						</li>
 
 						<li>
-							<a href="/docs/promotion-endorsements.html">
+							<a href="{{"/docs/promotion-endorsements.html" | relative_url}}">
 								Promotion Endorsements
 							</a>
 						</li>
 
 						<li>
-							<a href="/docs/glossary.html">
+							<a href="{{"/docs/glossary.html" | relative_url}}">
 								Glossary
 							</a>
 						</li>
@@ -83,15 +83,15 @@
 							</a>
 						</li>
 					</ul>
-    			</li>
-  			</ul>
+				</li>
+			</ul>
 		</nav>
 	</header>
 
 	<div class="clear">
 		<h1>{{ page.title }}</h1>
 
- 		{{ content }}
- 	</div>
+		{{ content }}
+	</div>
 </body>
 </html>
