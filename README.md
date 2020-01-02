@@ -33,3 +33,6 @@ This is built using Jekyll. To run this and make changes...
  ### Why Jekyll
 
  Given this is in GitHub, it makes sense to use GitHub Pages, which provides support for [Jekyll](https://jekyllrb.com/). Jekyll uses [Liquid](https://shopify.github.io/liquid/basics/introduction/), which provides HTML-like templates. This gives the benefit of layouts to reduce repetition and HTML tables, which are easier to read & edit than Markdown tables.
+ 
+## License
+[Creative commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)
