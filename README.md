@@ -2,7 +2,7 @@
 
 ## About
 
-Welcome and please [click here to view the Scout24 Individual Contributor Levels and Titles](PUTLINKHERE).
+Welcome and please [click here to view the Scout24 Individual Contributor Levels and Titles](https://scout24.github.io/ic-levels-and-titles/).
 
 This document is intended to give a clear and consistent view to engineers and their managers on career development and hiring assessments.
 
