@@ -1,0 +1,28 @@
+id: ic-levels-and-titles
+name: Individual Contributor Levels and Titles
+description: Scout24 Individual Contributor Levels and Titles. This document is intended to give a clear and consistent view to engineers and their managers on career development and hiring assessments.
+type: documentation
+product: scout24-engineering
+vertical: s24
+availability: false
+confidentiality: public
+integrity: false
+owners:
+  - is24-architecture-guilde@scout24.com
+  - as24-arch-guild@scout24.com
+links:
+  - type: repository
+    title: github repository
+    address: https://github.com/Scout24/ic-levels-and-titles
+  - type: documentation
+    title: license
+    address: http://creativecommons.org/licenses/by/4.0/
+  - type: public
+    public page
+    address: https://scout24.github.io/ic-levels-and-titles/
+platform: saas
+tags:
+  - engineering
+  - levels
+  - titles
+license: Creative Commons Attribution 4.0 International
