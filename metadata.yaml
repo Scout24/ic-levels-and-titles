@@ -18,7 +18,7 @@ links:
     title: license
     address: http://creativecommons.org/licenses/by/4.0/
   - type: public
-    public page
+    title: public page
     address: https://scout24.github.io/ic-levels-and-titles/
 platform: saas
 tags:
