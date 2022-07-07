@@ -9,21 +9,7 @@ title: Expected Influence
 			<th>
 				<!-- blank -->
 			</th>
-			<th>
-				Self
-			</th>
-			<th>
-				Delivery Team
-			</th>
-			<th>
-				Department
-			</th>
-			<th>
-				Company
-			</th>
-			<th>
-				Industry
-			</th>
+			{% include influence/headers.html %}
 		</tr>
 	</thead>
 
@@ -32,116 +18,42 @@ title: Expected Influence
 			<th>
 				Junior Engineer
 			</th>
-			<td class="mandatory">
-				Focus on improving core skills
-			</td>
-			<td class="stretch">
-				Contributes with support of others
-			</td>
-			<td>
-			</td>
-			<td>
-			</td>
-			<td>
-			</td>
+			{% include influence/swe-junior.html %}
 		</tr>
 
 		<tr>
 			<th>
-				Engineer
+				Professional Engineer
 			</th>
-			<td class="mandatory">
-				Demonstrates passion to learn new skills, improves work with new skills
-			</td>
-			<td class="mandatory">
-				Contributes, may need support with complex tasks. Supports juniors
-			</td>
-			<td class="stretch">
-				Collaborates with those beyond delivery team
-			</td>
-			<td>
-			</td>
-			<td>
-			</td>
+			{% include influence/swe-professional.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Senior Engineer
 			</th>
-			<td class="mandatory">
-				Demonstrates passion to learn, applies learnings to improve team
-			</td>
-			<td class="mandatory">
-				Tackles hard technical problems. Helps colleagues within same team
-			</td>
-			<td class="stretch">
-				Fully knowledgeable of delivery team’s codebases, occasionally works beyond team
-			</td>
-			<td class="stretch">
-				Occasionally trains other engineers in the company on their area of responsibility
-			</td>
-			<td>
-			</td>
+			{% include influence/swe-senior.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Lead Engineer
 			</th>
-			<td class="mandatory">
-				Demonstrates passion to learn, applies learnings to improve department
-			</td>
-			<td class="mandatory">
-				Multiple delivery teams noticeably benefit from Lead Engineer
-			</td>
-			<td class="mandatory">
-				Known expert in department. Improves practices in department. Ensures tech health
-			</td>
-			<td class="stretch">
-				Improves skills of those in the company, occasionally works beyond core department
-			</td>
-			<td class="stretch">
-				Talks at public events. Contributes to open source projects
-			</td>
+			{% include influence/swe-lead.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Principal Engineer
 			</th>
-			<td class="mandatory">
-				Demonstrates passion to learn, applies learnings to improve the company
-			</td>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-				Consulted on big tech decisions, respected across the company
-			</td>
-			<td class="stretch">
-				Promotes the technical interests of Scout the outsite world such as through talks at public events, publication of articles or open-source contributions.
-			</td>
+			{% include influence/swe-principal.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Distinguished Engineer
 			</th>
-			<td class="mandatory">
-				Demonstrates passion to learn, applies learnings to improve Scout
-			</td>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-				Provides guidance to tech staff across the company. Influences the Executive Leadership Team's decisions.
-			</td>
-			<td class="mandatory">
-				Attracts engineers to Scout through their public profile. Drives the open source policies of Scout
-			</td>
+			{% include influence/swe-distinguished.html %}
 		</tr>
 	</tbody>
 </table>

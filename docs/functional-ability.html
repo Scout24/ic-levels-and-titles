@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Expected Functional Ability
+swe-competence: functional-ability
 ---
 
 <table class="matrix">
@@ -9,18 +10,7 @@ title: Expected Functional Ability
 			<th>
 				<!-- blank -->
 			</th>
-			<th>
-				Features & bugs
-			</th>
-			<th>
-				Codebases & frameworks
-			</th>
-			<th>
-				Programming languages
-			</th>
-			<th>
-				Theoretical knowledge
-			</th>
+			{% include functional-ability/headers.html %}
 		</tr>
 	</thead>
 
@@ -29,106 +19,42 @@ title: Expected Functional Ability
 			<th>
 				Junior Engineer
 			</th>
-			<td class="stretch">
-				Can build basic features, requires assistance
-			</td>
-			<td class="stretch">
-				Works in other codebases using similar technologies
-			</td>
-			<td class="mandatory">
-				Be comfortable with at least one programming language
-			</td>
-			<td class="stretch">
-				Basic understanding of software practices and design principles
-			</td>
+			{% include functional-ability/swe-junior.html %}
 		</tr>
 
 		<tr>
 			<th>
-				Engineer
+				Professional Engineer
 			</th>
-			<td class="mandatory">
-				Only the most complex bugs or features require assistance from others
-			</td>
-			<td class="mandatory">
-				Can work in other codebases using different frameworks and styles
-			</td>
-			<td class="mandatory">
-				Occasionally uses multiple programming languages
-			</td>
-			<td class="mandatory">
-				Good understanding of software practices and design principles. Can explain to others
-			</td>
+			{% include functional-ability/swe-professional.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Senior Engineer
 			</th>
-			<td class="mandatory">
-				Can handle most complex bugs and features. Understands the impact of their work on teams in other departments. Can quickly debug problems on production systems
-			</td>
-			<td class="mandatory">
-				Has deep knowledge of multiple codebases with a variety frameworks and styles. Strong awareness of available technologies (e.g. AWS)
-			</td>
-			<td class="stretch">
-				Can work in multiple languages to rarely have dependencies on others when building features that span multiple stacks
-			</td>
-			<td class="mandatory">
-				Has strong understanding of and applies software practices and design principles. System design considers appropriate level of resiliency
-			</td>
+			{% include functional-ability/swe-senior.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Lead Engineer
 			</th>
-			<td class="mandatory">
-				Uses abstraction to solve common problems and improve efficiency throughout department
-			</td>
-			<td class="mandatory">
-				Has significant influence on codebases using a variety of frameworks and styles. Able to quickly familiarize themselves with most codebases in the company
-			</td>
-			<td class="mandatory">
-				Works on multiple languages and stacks to achieve results. Ensures language choices consider long-term implications to the company
-			</td>
-			<td class="mandatory">
-				Teaches others in the company of software practices and design principles. Understands and teaches how to build resilient systems
-			</td>
+			{% include functional-ability/swe-lead.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Principal Engineer
 			</th>
-			<td class="mandatory">
-				Uses abstraction to solve common problems and improve efficiency throughout the company
-			</td>
-			<td class="mandatory">
-				Able and willing to operate in most codebases within the company to achieve results
-			</td>
-			<td class="mandatory">
-				Ensures consistency that will benefit a the company in the long term
-			</td>
-			<td class="mandatory">
-				Introduces and applies new practices and principles to the company. Creates culture of resiliency
-			</td>
+			{% include functional-ability/swe-principal.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Distinguished Engineer
 			</th>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-				Ensures common standards across Scout
-			</td>
-			<td class="mandatory">
-				Theoretical knowledge used to improve Scout products and people. Improves the resiliency of the company
-			</td>
+			{% include functional-ability/swe-distinguished.html %}
 		</tr>
 	</tbody>
 </table>
