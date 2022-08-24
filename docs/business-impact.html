@@ -9,21 +9,7 @@ title: Expected Business Impact
 			<th>
 				<!-- blank -->
 			</th>
-			<th>
-				Measuring impact of changes
-			</th>
-			<th>
-				Ideas to improve product
-			</th>
-			<th>
-				Efficiency of  development
-			</th>
-			<th>
-				Planning horizon
-			</th>
-			<th>
-				Productivity of engineering
-			</th>
+			{% include business-impact/headers.html %}
 		</tr>
 	</thead>
 
@@ -32,120 +18,42 @@ title: Expected Business Impact
 			<th>
 				Junior Engineer
 			</th>
-			<td class="stretch">
-				Understands and ensures accurate tracking
-			</td>
-			<td class="stretch">
-				Gives input on ideas within team
-			</td>
-			<td>
-			</td>
-			<td class="stretch">
-				Comfortable planning and executing their tasks within a sprint
-			</td>
-			<td>
-			</td>
+			{% include business-impact/swe-junior.html %}
 		</tr>
 
 		<tr>
 			<th>
-				Engineer
+				Professional Engineer
 			</th>
-			<td class="mandatory">
-				Runs and understands results of experiments
-			</td>
-			<td class="mandatory">
-				Has educated opinions on product ideas
-			</td>
-			<td>
-			</td>
-			<td class="mandatory">
-				Codes for use-cases outside the current sprint without overly generic abstractions
-			</td>
-			<td class="stretch">
-				Refactors to make future code changes easier
-			</td>
+			{% include business-impact/swe-professional.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Senior Engineer
 			</th>
-			<td class="mandatory">
-				Finds easiest way to test new product ideas
-			</td>
-			<td class="mandatory">
-				Assess and challenges ideas based on ROI
-			</td>
-			<td class="stretch">
-				Introduces new libraries that significantly improve efficiency development
-			</td>
-			<td class="mandatory">
-				Defines architecture to help team achieve cycle goals
-			</td>
-			<td class="mandatory">
-				Refactors to make future code changes easier
-			</td>
+			{% include business-impact/swe-senior.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Lead Engineer
 			</th>
-			<td class="mandatory">
-				Ensures consistency in measuring of impact across department
-			</td>
-			<td class="mandatory">
-				Assess and challenges ideas based on ROI. Provides technical input on strategy
-			</td>
-			<td class="mandatory">
-				Introduces languages or frameworks that ease development. Adapts Scout24 best practices for department. Fosters collaboration across the company
-			</td>
-			<td class="mandatory">
-				Understands long term goals of department and helps with decision making to achieve those goals
-			</td>
-			<td class="stretch">
-				Builds tools to improve efficiency of own department
-			</td>
+			{% include business-impact/swe-lead.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Principal Engineer
 			</th>
-			<td class="mandatory">
-				Ensures consistency in measuring of impact across the company
-			</td>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-				Ensures appropriate technologies are used in the company. Drives adoption of Scout24 best practices throughout the company
-			</td>
-			<td class="mandatory">
-				Significantly contributes to the long term technical strategy of the company
-			</td>
-			<td class="stretch">
-				Builds tools to improve efficiency of the company
-			</td>
+			{% include business-impact/swe-principal.html %}
 		</tr>
 
 		<tr>
 			<th>
 				Distinguished Engineer
 			</th>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-			</td>
-			<td class="mandatory">
-				Ensures appropriate technologies are used in Scout. Helps define Scout24 best practices
-			</td>
-			<td class="mandatory">
-				Drives the long term technical strategy of the company using external data and the vision of the company
-			</td>
-			<td class="stretch">
-				Open-sourced tools that improved efficiency of Scout
-			</td>
+			{% include business-impact/swe-distinguished.html %}
 		</tr>
 	</tbody>
 </table>
