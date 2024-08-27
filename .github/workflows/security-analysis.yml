@@ -14,11 +14,14 @@ jobs:
     name: "Security Static Analysis"
     runs-on: ubuntu-latest
 
-    # Skip any PR created by dependabot:
+    container:
+      image: semgrep/semgrep
+
+    # Skip any PR created by dependabot to avoid permission issues:
     if: (github.actor != 'dependabot[bot]')
 
     steps:
-    - uses: scout24/s24-sast-action@v2
-      with:
-        SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-
+      - uses: actions/checkout@v4
+      - run: semgrep ci
+        env:
+          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
